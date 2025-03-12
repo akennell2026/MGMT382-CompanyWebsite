@@ -83,21 +83,48 @@
         a:hover {
             text-decoration: underline;
         }
+
+        /* Navigation bar style */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #2b3e61; /* Dark blue */
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        nav ul li a:hover {
+            background-color: #1d2b43; /* Darker blue on hover */
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Company Name</h1>
         <nav>
-            <ul style="list-style: none; padding: 0; display: flex; justify-content: center;">
-                <li style="margin-right: 10px;"><a href="page1.html" style="color: #ffffff; text-decoration: none;">Page 1</a></li>
-                <li style="margin-right: 10px;"><a href="page2.html" style="color: #ffffff; text-decoration: none;">Page 2</a></li>
-                <li style="margin-right: 10px;"><a href="page3.html" style="color: #ffffff; text-decoration: none;">Our Product</a></li>
-                <li style="margin-right: 10px;"><a href="page4.html" style="color: #ffffff; text-decoration: none;">Page 4</a></li>
-                <li style="margin-right: 10px;"><a href="page5.html" style="color: #ffffff; text-decoration: none;">Page 5</a></li>
+            <ul>
+                <li><a href="history.html">History</a></li>
+                <li><a href="management.html">Management</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
             </ul>
         </nav>
     </header>
+
     <div class="container">
         <div class="centered">
             <h2>About Us</h2>
