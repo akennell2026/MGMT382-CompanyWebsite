@@ -12,7 +12,7 @@
         body {
             font-family: "Poppins", sans-serif;
             color: #333;
-            background: linear-gradient(to right, #dbeafe, #bfdbfe); /* Light Blue Gradient */
+            background: linear-gradient(to right, #dbeafe, #bfdbfe);
             margin: 0;
             padding: 0;
             text-align: center;
@@ -20,7 +20,7 @@
 
         /* Header Styling */
         header {
-            background: #1e3a8a; /* Navy Blue */
+            background: #1e3a8a;
             color: white;
             padding: 20px;
             font-size: 24px;
@@ -61,16 +61,28 @@
             transform: scale(1.05);
         }
 
-        .team-member h3 {
-            margin: 0;
-            font-size: 20px;
-            color: navy;
+        /* Link Styling */
+        a {
+            color: #1e3a8a;
+            font-weight: bold;
+            text-decoration: none;
         }
 
-        .team-member p {
-            margin: 5px 0;
-            font-size: 16px;
-            color: #555;
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Downloadable File */
+        .download {
+            margin-top: 20px;
+        }
+
+        /* Image Styling */
+        .team-member img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -84,73 +96,52 @@
 
 <div class="team-container">
     <div class="team-member">
-        <img src="lan.jpg" alt="Lan" width="150">
+        <img src="lan.jpg" alt="Lan">
         <h3><b>Lan</b></h3>
         <p><i>Chief Executive Officer</i></p>
     </div>
     
     <div class="team-member">
-        <img src="aubrey.jpg" alt="Aubrey" width="150">
+        <img src="aubrey.jpg" alt="Aubrey">
         <h3><b>Aubrey</b></h3>
         <p><i>Chief Operating Officer</i></p>
     </div>
     
     <div class="team-member">
-        <img src="ignacio.jpg" alt="Ignacio" width="150">
+        <img src="ignacio.jpg" alt="Ignacio">
         <h3><b>Ignacio</b></h3>
         <p><i>Chief Financial Officer</i></p>
     </div>
     
     <div class="team-member">
-        <img src="matthew.jpg" alt="Matthew" width="150">
+        <img src="matthew.jpg" alt="Matthew">
         <h3><b>Matthew</b></h3>
         <p><i>Head of Marketing</i></p>
     </div>
     
     <div class="team-member">
-        <img src="sebastian.jpg" alt="Sebastian" width="150">
+        <img src="sebastian.jpg" alt="Sebastian">
         <h3><b>Sebastian</b></h3>
         <p><i>Director of Strategy</i></p>
     </div>
 </div>
 
-<!-- Ordered List: Job Descriptions -->
-<h2>Our Leadership Roles</h2>
-<ol>
-    <li><b>Lan - CEO:</b> Visionary leader steering the company toward success.</li>
-    <li><b>Aubrey - COO:</b> Ensures seamless operations and efficiency.</li>
-    <li><b>Ignacio - CFO:</b> Manages finances, investments, and growth strategies.</li>
-    <li><b>Matthew - Head of Marketing:</b> Creates viral campaigns to elevate brand presence.</li>
-    <li><b>Sebastian - Director of Strategy:</b> Develops long-term business models for expansion.</li>
-</ol>
-
-<!-- Unordered List: Website Features -->
-<h2>Our Unique Approach</h2>
-<ul>
-    <li><b>Sleek Design:</b> Minimalist yet powerful, engineered for excellence.</li>
-    <li><b>Impeccable Fabric:</b> Made from **high-performance compression blends**, offering breathability and durability.</li>
-    <li><b>Development Methods:</b> Precision-cut textiles, advanced cooling tech, and athlete-driven testing.</li>
-</ul>
-
 <!-- Internal Link to Products Page -->
-<h2>Explore Our Collection</h2>
-<p>Discover our latest innovations in <a href="products.html">our product catalog</a>.</p>
-
-<!-- Collaboration with Influencer -->
-<div class="collab-section">
-    <h2>Collaborating with Simeon Panda</h2>
-    <p>We are proud to work with fitness icon <a href="https://www.simeonpanda.com" target="_blank">Simeon Panda</a> to redefine athletic wear.</p>
-</div>
+<h2>Check Out Our Products</h2>
+<p><a href="products.html">Explore our latest designs here.</a></p>
 
 <!-- Contact Me Section -->
 <h2>Contact Us</h2>
-<p><a href="mailto:aubreykennelly4@gmail.com">Click here</a> to email us directly.</p>
+<p><a href="mailto:aubreykennelly4@gmail.com">Click here</a> to email Aubrey directly.</p>
 
-<!-- Downloadable File: Product Development & History -->
+<!-- Downloadable File -->
 <div class="download">
-    <h2>Download Our Innovation Story</h2>
-    <p><a href="first_product_history.pdf" download>Click here</a> to read how we developed our first product.</p>
+    <h2>Download Our Product Development Story</h2>
+    <p>Learn how we created our first product with detailed images and history.</p>
+    <p><a href="product_history.pdf" download>Click here to download</a></p>
 </div>
 
 </body>
+</html>
+
 </html>
