@@ -2,354 +2,155 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page 1 - Company Story and History</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Poppins font -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Leadership Team</title>
     <style>
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Poppins:wght@300;400;700&display=swap');
+
+        /* General Styling */
         body {
-            background: linear-gradient(to right, #a3c8f5, #f0f9ff); /* Light blue gradient background */
+            font-family: "Poppins", sans-serif;
+            color: #333;
+            background: linear-gradient(to right, #dbeafe, #bfdbfe); /* Light Blue Gradient */
             margin: 0;
             padding: 0;
-            font-family: 'Poppins', sans-serif; /* Set font to Poppins */
-        }
-        header, footer {
-            background-color: #2b3e61; /* Dark blue for header and footer */
-            color: white;
-            padding: 10px 0;
             text-align: center;
         }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
+
+        /* Header Styling */
+        header {
+            background: #1e3a8a; /* Navy Blue */
             color: white;
-        }
-        h2, h3 {
-            color: black; /* Ensure headings are black */
-        }
-        h3 {
-            font-weight: bold;
-        }
-        .subheading {
-            font-style: italic;
-            color: blue;
-        }
-        .container {
             padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Section Titles */
+        h2 {
+            color: #1e3a8a;
+            border-bottom: 3px solid #1e3a8a;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+
+        /* Team Section */
+        .team-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 40px auto;
             max-width: 1200px;
-            margin: 0 auto;
-            background-color: white; /* White background for content area */
-            border-radius: 8px;
-            color: black; /* Set text color for content to black */
         }
-        p {
-            line-height: 1.6;
-            color: black; /* Set paragraph text color to black */
+
+        .team-member {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
         }
-        a {
-            color: blue; /* Blue text for links */
-            text-decoration: none;
+
+        .team-member:hover {
+            transform: scale(1.05);
         }
-        a:hover {
-            text-decoration: underline;
+
+        .team-member h3 {
+            margin: 0;
+            font-size: 20px;
+            color: navy;
+        }
+
+        .team-member p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #555;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Company Name</h1>
-        <nav>
-            <ul style="list-style: none; padding: 0; display: flex; justify-content: center;">
-                <li style="margin-right: 10px;"><a href="page1.html" style="color: #ffffff; text-decoration: none;">Page 1</a></li>
-                <li style="margin-right: 10px;"><a href="page2.html" style="color: #ffffff; text-decoration: none;">Page 2</a></li>
-                <li style="margin-right: 10px;"><a href="page3.html" style="color: #ffffff; text-decoration: none;">Our Product</a></li>
-                <li style="margin-right: 10px;"><a href="page4.html" style="color: #ffffff; text-decoration: none;">Page 4</a></li>
-                <li style="margin-right: 10px;"><a href="page5.html" style="color: #ffffff; text-decoration: none;">Page 5</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page 1 - Company Story and History</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Poppins font -->
-    <style>
-        body {
-            background: linear-gradient(to right, #a3c8f5, #f0f9ff); /* Light blue gradient background */
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif; /* Set font to Poppins */
-        }
-        header, footer {
-            background-color: #2b3e61; /* Dark blue for header and footer */
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: white;
-        }
-        h2, h3 {
-            color: black; /* Ensure headings are black */
-        }
-        h3 {
-            font-weight: bold;
-        }
-        .subheading {
-            font-style: italic;
-            color: blue;
-        }
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: white; /* White background for content area */
-            border-radius: 8px;
-            color: black; /* Set text color for content to black */
-        }
-        p {
-            line-height: 1.6;
-            color: black; /* Set paragraph text color to black */
-        }
-        a {
-            color: blue; /* Blue text for links */
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Company Name</h1>
-        <nav>
-            <ul style="list-style: none; padding: 0; display: flex; justify-content: center;">
-                <li style="margin-right: 10px;"><a href="page1.html" style="color: #ffffff; text-decoration: none;">Page 1</a></li>
-                <li style="margin-right: 10px;"><a href="page2.html" style="color: #ffffff; text-decoration: none;">Page 2</a></li>
-                <li style="margin-right: 10px;"><a href="page3.html" style="color: #ffffff; text-decoration: none;">Our Product</a></li>
-                <li style="margin-right: 10px;"><a href="page4.html" style="color: #ffffff; text-decoration: none;">Page 4</a></li>
-                <li style="margin-right: 10px;"><a href="page5.html" style="color: #ffffff; text-decoration: none;">Page 5</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page 1 - Company Story and History</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Poppins font -->
-    <style>
-        body {
-            background: linear-gradient(to right, #a3c8f5, #f0f9ff); /* Light blue gradient background */
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif; /* Set font to Poppins */
-        }
-        header, footer {
-            background-color: #2b3e61; /* Dark blue for header and footer */
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: white;
-        }
-        h2, h3 {
-            color: black; /* Ensure headings are black */
-        }
-        h3 {
-            font-weight: bold;
-        }
-        .subheading {
-            font-style: italic;
-            color: blue;
-        }
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: white; /* White background for content area */
-            border-radius: 8px;
-            color: black; /* Set text color for content to black */
-        }
-        p {
-            line-height: 1.6;
-            color: black; /* Set paragraph text color to black */
-        }
-        a {
-            color: blue; /* Blue text for links */
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Company Name</h1>
-        <nav>
-            <ul style="list-style: none; padding: 0; display: flex; justify-content: center;">
-                <li style="margin-right: 10px;"><a href="page1.html" style="color: #ffffff; text-decoration: none;">Page 1</a></li>
-                <li style="margin-right: 10px;"><a href="page2.html" style="color: #ffffff; text-decoration: none;">Page 2</a></li>
-                <li style="margin-right: 10px;"><a href="page3.html" style="color: #ffffff; text-decoration: none;">Our Product</a></li>
-                <li style="margin-right: 10px;"><a href="page4.html" style="color: #ffffff; text-decoration: none;">Page 4</a></li>
-                <li style="margin-right: 10px;"><a href="page5.html" style="color: #ffffff; text-decoration: none;">Page 5</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page 1 - Company Story and History</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Poppins font -->
-    <style>
-        body {
-            background: linear-gradient(to right, #a3c8f5, #f0f9ff); /* Light blue gradient background */
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif; /* Set font to Poppins */
-        }
-        header, footer {
-            background-color: #2b3e61; /* Dark blue for header and footer */
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: white;
-        }
-        h2, h3 {
-            color: black; /* Ensure headings are black */
-        }
-        h3 {
-            font-weight: bold;
-        }
-        .subheading {
-            font-style: italic;
-            color: blue;
-        }
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: white; /* White background for content area */
-            border-radius: 8px;
-            color: black; /* Set text color for content to black */
-        }
-        p {
-            line-height: 1.6;
-            color: black; /* Set paragraph text color to black */
-        }
-        a {
-            color: blue; /* Blue text for links */
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Company Name</h1>
-        <nav>
-            <ul style="list-style: none; padding: 0; display: flex; justify-content: center;">
-                <li style="margin-right: 10px;"><a href="page1.html" style="color: #ffffff; text-decoration: none;">Page 1</a></li>
-                <li style="margin-right: 10px;"><a href="page2.html" style="color: #ffffff; text-decoration: none;">Page 2</a></li>
-                <li style="margin-right: 10px;"><a href="page3.html" style="color: #ffffff; text-decoration: none;">Our Product</a></li>
-                <li style="margin-right: 10px;"><a href="page4.html" style="color: #ffffff; text-decoration: none;">Page 4</a></li>
-                <li style="margin-right: 10px;"><a href="page5.html" style="color: #ffffff; text-decoration: none;">Page 5</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page 1 - Company Story and History</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <!-- Poppins font -->
-    <style>
-        body {
-            background: linear-gradient(to right, #a3c8f5, #f0f9ff); /* Light blue gradient background */
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif; /* Set font to Poppins */
-        }
-        header, footer {
-            background-color: #2b3e61; /* Dark blue for header and footer */
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: white;
-        }
-        h2, h3 {
-            color: black; /* Ensure headings are black */
-        }
-        h3 {
-            font-weight: bold;
-        }
-        .subheading {
-            font-style: italic;
-            color: blue;
-        }
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-            background-color: white; /* White background for content area */
-            border-radius: 8px;
-            color: black; /* Set text color for content to black */
-        }
-        p {
-            line-height: 1.6;
-            color: black; /* Set paragraph text color to black */
-        }
-        a {
-            color: blue; /* Blue text for links */
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Company Name</h1>
-        <nav>
-            <ul style="list-style: none; padding: 0; display: flex; justify-content: center;">
-                <li style="margin-right: 10px;"><a href="page1.html" style="color: #ffffff; text-decoration: none;">Page 1</a></li>
-                <li style="margin-right: 10px;"><a href="page2.html" style="color: #ffffff; text-decoration: none;">Page 2</a></li>
-                <li style="margin-right: 10px;"><a href="page3.html" style="color: #ffffff; text-decoration: none;">Our Product</a></li>
-                <li style="margin-right: 10px;"><a href="page4.html" style="color: #ffffff; text-decoration: none;">Page 4</a></li>
-                <li style="margin-right: 10px;"><a href="page5.html" style="color: #ffffff; text-decoration: none;">Page 5</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div
+
+<header>
+    Professional Leadership Team
+</header>
+
+<h2>Meet Our Team</h2>
+
+<div class="team-container">
+    <div class="team-member">
+        <img src="lan.jpg" alt="Lan" width="150">
+        <h3><b>Lan</b></h3>
+        <p><i>Chief Executive Officer</i></p>
+    </div>
+    
+    <div class="team-member">
+        <img src="aubrey.jpg" alt="Aubrey" width="150">
+        <h3><b>Aubrey</b></h3>
+        <p><i>Chief Operating Officer</i></p>
+    </div>
+    
+    <div class="team-member">
+        <img src="ignacio.jpg" alt="Ignacio" width="150">
+        <h3><b>Ignacio</b></h3>
+        <p><i>Chief Financial Officer</i></p>
+    </div>
+    
+    <div class="team-member">
+        <img src="matthew.jpg" alt="Matthew" width="150">
+        <h3><b>Matthew</b></h3>
+        <p><i>Head of Marketing</i></p>
+    </div>
+    
+    <div class="team-member">
+        <img src="sebastian.jpg" alt="Sebastian" width="150">
+        <h3><b>Sebastian</b></h3>
+        <p><i>Director of Strategy</i></p>
+    </div>
+</div>
+
+<!-- Ordered List: Job Descriptions -->
+<h2>Our Leadership Roles</h2>
+<ol>
+    <li><b>Lan - CEO:</b> Visionary leader steering the company toward success.</li>
+    <li><b>Aubrey - COO:</b> Ensures seamless operations and efficiency.</li>
+    <li><b>Ignacio - CFO:</b> Manages finances, investments, and growth strategies.</li>
+    <li><b>Matthew - Head of Marketing:</b> Creates viral campaigns to elevate brand presence.</li>
+    <li><b>Sebastian - Director of Strategy:</b> Develops long-term business models for expansion.</li>
+</ol>
+
+<!-- Unordered List: Website Features -->
+<h2>Our Unique Approach</h2>
+<ul>
+    <li><b>Sleek Design:</b> Minimalist yet powerful, engineered for excellence.</li>
+    <li><b>Impeccable Fabric:</b> Made from **high-performance compression blends**, offering breathability and durability.</li>
+    <li><b>Development Methods:</b> Precision-cut textiles, advanced cooling tech, and athlete-driven testing.</li>
+</ul>
+
+<!-- Internal Link to Products Page -->
+<h2>Explore Our Collection</h2>
+<p>Discover our latest innovations in <a href="products.html">our product catalog</a>.</p>
+
+<!-- Collaboration with Influencer -->
+<div class="collab-section">
+    <h2>Collaborating with Simeon Panda</h2>
+    <p>We are proud to work with fitness icon <a href="https://www.simeonpanda.com" target="_blank">Simeon Panda</a> to redefine athletic wear.</p>
+</div>
+
+<!-- Contact Me Section -->
+<h2>Contact Us</h2>
+<p><a href="mailto:aubreykennelly4@gmail.com">Click here</a> to email us directly.</p>
+
+<!-- Downloadable File: Product Development & History -->
+<div class="download">
+    <h2>Download Our Innovation Story</h2>
+    <p><a href="first_product_history.pdf" download>Click here</a> to read how we developed our first product.</p>
+</div>
+
+</body>
+</html>
