@@ -75,7 +75,13 @@
             border-radius: 50%;
             border: 3px solid #3B82F6;
             margin-bottom: 10px;
-            object-fit: cover; /* Ensures images look uniform */
+            object-fit: cover;
+        }
+
+        /* Error Message for Missing Images */
+        .error {
+            color: red;
+            font-size: 1em;
         }
 
         /* Quotes Styling */
@@ -139,7 +145,8 @@
 
     <section class="testimonials-container">
         <div class="testimonial">
-            <img src="john.jpg" alt="Customer 1">
+            <img src="john.jpg" alt="Customer 1" onerror="this.style.display='none'; document.getElementById('john-error').style.display='block';">
+            <p id="john-error" class="error" style="display: none;">⚠️ Image not found: john.jpg</p>
             <blockquote>
                 "This company changed my life! Their products are top-notch!"
             </blockquote>
@@ -147,7 +154,8 @@
         </div>
 
         <div class="testimonial">
-            <img src="jane.jpg" alt="Customer 2">
+            <img src="jane.jpg" alt="Customer 2" onerror="this.style.display='none'; document.getElementById('jane-error').style.display='block';">
+            <p id="jane-error" class="error" style="display: none;">⚠️ Image not found: jane.jpg</p>
             <blockquote>
                 "Fantastic service! I will definitely recommend it to everyone!"
             </blockquote>
