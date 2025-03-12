@@ -62,7 +62,6 @@
             border-radius: 15px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease;
-            text-align: center;
         }
 
         .testimonial:hover {
@@ -76,7 +75,7 @@
             border-radius: 50%;
             border: 3px solid #3B82F6;
             margin-bottom: 10px;
-            object-fit: cover;
+            object-fit: cover; /* Ensures images look uniform */
         }
 
         /* Quotes Styling */
@@ -86,90 +85,5 @@
             margin: 10px 0;
         }
 
-        /* Contact Button */
-        .contact-btn {
-            display: inline-block;
-            background: #3B82F6;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 1.2em;
-            transition: background 0.3s;
-        }
+        /* Contac
 
-        .contact-btn:hover {
-            background: #1E3A8A;
-        }
-
-        /* Back Button */
-        .back-btn {
-            display: inline-block;
-            background: white;
-            color: #1E3A8A;
-            padding: 10px 15px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 1.2em;
-            margin-top: 20px;
-            font-weight: bold;
-            border: 2px solid #1E3A8A;
-        }
-
-        .back-btn:hover {
-            background: #1E3A8A;
-            color: white;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="history.html">History</a>
-        <a href="management.html">Management</a>
-        <a href="product.html">Products</a>
-        <a href="services.html">Services</a>
-        <a href="testimonials.html">Testimonials</a>
-    </nav>
-
-    <header>
-        <h1>What Our Customers Say</h1>
-    </header>
-
-    <section class="testimonials-container">
-        <div class="testimonial">
-            <img src="john.jpg" alt="Customer 1">
-            <blockquote>
-                "This company changed my life! Their products are top-notch!"
-            </blockquote>
-            <cite>- John Doe</cite>
-        </div>
-
-        <div class="testimonial">
-            <img src="jane.jpg" alt="Customer 2">
-            <blockquote>
-                "Fantastic service! I will definitely recommend it to everyone!"
-            </blockquote>
-            <cite>- Jane Smith</cite>
-        </div>
-
-        <div class="testimonial">
-            <img src="alex.jpg" alt="Customer 3">
-            <blockquote>
-                "Great experience! Professional, reliable, and excellent quality."
-            </blockquote>
-            <cite>- Alex Johnson</cite>
-        </div>
-    </section>
-
-    <!-- Back Button -->
-    <a href="index.html" class="back-btn">← Go Back</a>
-
-    <footer>
-        <a href="mailto:aguilers@purdue.edu" class="contact-btn">Contact Me</a>
-    </footer>
-
-</body>
-</html>
