@@ -1,171 +1,98 @@
-/* General Styles */
-body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page 1 - My Product Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-/* Header Styling */
-header {
-    background-color: #222;
-    color: #ffffff;
-    padding: 15px 0;
-    text-align: center;
-}
+        header {
+            background-color: #222;
+            color: #ffffff;
+            padding: 15px 0;
+            text-align: center;
+        }
 
-header h1 {
-    margin: 0;
-    font-size: 28px;
-    font-weight: bold;
-}
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+        }
 
-/* Navigation Styling */
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background: #333;
-    padding: 10px 0;
-}
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background: #333;
+            padding: 10px 0;
+        }
 
-nav ul li {
-    margin: 0 15px;
-}
+        nav ul li {
+            margin: 0 15px;
+        }
 
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    transition: background 0.3s;
-}
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
 
-nav ul li a:hover, nav ul li a.active {
-    background-color: #555;
-    border-radius: 5px;
-}
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #555;
+            border-radius: 5px;
+        }
 
-/* Container Styling */
-.container {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
 
-/* Services Page Styling */
-.services-section {
-    margin-bottom: 30px;
-}
-
-.services-section h2 {
-    color: #222;
-    border-bottom: 3px solid #0073e6;
-    padding-bottom: 8px;
-    font-size: 24px;
-}
-
-.services-section p {
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.services-list {
-    list-style: none;
-    padding: 0;
-}
-
-.services-list li {
-    background: #e0e0e0;
-    margin: 10px 0;
-    padding: 12px;
-    border-radius: 5px;
-    font-style: italic;
-}
-
-/* Image Styling */
-.service-image {
-    width: 100%;
-    max-width: 500px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-}
-
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #222;
-    color: #ffffff;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-/* Download Button */
-.download-btn {
-    display: inline-block;
-    background-color: #0073e6;
-    color: #ffffff;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 15px;
-}
-
-.download-btn:hover {
-    background-color: #005bb5;
-}
-
-/* Specific Service Sections */
-.service-category {
-    background: #f8f8f8;
-    padding: 20px;
-    margin: 20px 0;
-    border-left: 5px solid #0073e6;
-    border-radius: 5px;
-}
-
-.service-category h3 {
-    color: #0073e6;
-    font-size: 20px;
-}
-
-.service-category ul {
-    padding-left: 20px;
-}
-
-.service-category ul li {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-/* Custom Services Styling */
-#custom-sportswear, #apparel-manufacturing, #performance-gear, #ecommerce-retail, #sponsorship-programs {
-    margin-top: 20px;
-    padding: 15px;
-    background: #eef7ff;
-    border-left: 4px solid #0073e6;
-    border-radius: 5px;
-}
-
-#custom-sportswear h3, #apparel-manufacturing h3, #performance-gear h3, #ecommerce-retail h3, #sponsorship-programs h3 {
-    font-size: 22px;
-    color: #005bb5;
-}
-
-#custom-sportswear ul, #apparel-manufacturing ul, #performance-gear ul, #ecommerce-retail ul, #sponsorship-programs ul {
-    list-style-type: disc;
-    padding-left: 20px;
-}
-
-#custom-sportswear ul li, #apparel-manufacturing ul li, #performance-gear ul li, #ecommerce-retail ul li, #sponsorship-programs ul li {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #222;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Company Name</h1>
+        <nav>
+            <ul>
+                <li><a href="page1.html">Page 1</a></li>
+                <li><a href="page2.html">Page 2</a></li>
+                <li><a href="page3.html">Our Product</a></li>
+                <li><a href="page4.html">Page 4</a></li>
+                <li><a href="page5.html">Page 5</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Page 1</h2>
+        <p>Content for Page 1 goes here...</p>
+    </div>
+    <footer>
+        <p>Footer content goes here...</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
