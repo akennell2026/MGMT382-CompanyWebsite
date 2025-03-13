@@ -4,42 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Customer Testimonials</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 20px;
+        }
+        .testimonial {
+            background: white;
+            padding: 15px;
+            margin: 10px auto;
+            border-radius: 10px;
+            width: 50%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .testimonial img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        a {
+            color: blue;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>What Our Customers Say</h1>
 
-    <section>
-        <div>
-            <img src="john.jpg" alt="Customer 1" width="100" height="100">
-            <blockquote>
-                "This company changed my life! Their products are top-notch!"
-            </blockquote>
-            <cite>- John Doe</cite>
-        </div>
+    <h1>Customer <span style="color:red;">Testimonials</span></h1>
+    
+    <div class="testimonial">
+        <img src="john.jpg" alt="Happy Customer 1">
+        <p><b>John Doe</b>: <i>"This company changed my life! <u>Highly recommend.</u>"</i></p>
+    </div>
 
-        <div>
-            <img src="jane.jpg" alt="Customer 2" width="100" height="100">
-            <blockquote>
-                "Fantastic service! I will definitely recommend it to everyone!"
-            </blockquote>
-            <cite>- Jane Smith</cite>
-        </div>
+    <div class="testimonial">
+        <img src="jane.jpg" alt="Happy Customer 2">
+        <p><b>Jane Smith</b>: <i>"Fast delivery and great customer service!"</i></p>
+    </div>
 
-        <div>
-            <img src="alex.jpg" alt="Customer 3" width="100" height="100">
-            <blockquote>
-                "Great experience! Professional, reliable, and excellent quality."
-            </blockquote>
-            <cite>- Alex Johnson</cite>
-        </div>
-    </section>
+    <h2>Why Customers Love Us</h2>
+    <ul>
+        <li>Excellent Quality</li>
+        <li>Fast Shipping</li>
+        <li>Great Customer Support</li>
+    </ul>
 
-    <footer>
+    <h2>Our Top 3 Selling Points</h2>
+    <ol>
+        <li>Affordable Prices</li>
+        <li>Top-notch Products</li>
+        <li>Trusted by Thousands</li>
+    </ol>
+
+    <br>
+    <p>Read more about our customers' experiences: 
+        <a href="https://www.trustpilot.com/" target="_blank">Trustpilot Reviews</a>
+    </p>
+
+    <p>
+        <a href="customer_testimonials_random.pdf" download>Download Full Testimonials PDF</a>
+    </p>
+
+    <p>
         <a href="mailto:aguilers@purdue.edu">Contact Me</a>
-        <br><br>
-        <a href="https://raw.githubusercontent.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY/main/customer_testimonials_random.pdf" download>
-    Download Full Testimonials PDF
-</a>
-    </footer>
+    </p>
+
 </body>
 </html>
