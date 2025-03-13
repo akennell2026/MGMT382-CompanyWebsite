@@ -1,116 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>About us</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Leadership Team</title>
+    <style>
+        /* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Poppins:wght@300;400;700&display=swap');
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+        /* General Styling */
+        body {
+            font-family: "Poppins", sans-serif;
+            color: #ffffff;
+            background: linear-gradient(to right, #1E3A8A, #3B82F6); /* Two-toned blue gradient */
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            scroll-behavior: smooth;
+        }
 
-/* Style the header */
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
+        /* Header Styling */
+        header {
+            background: #1E3A8A;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
 
-/* Container for flexboxes */
-section {
-  display: -webkit-flex;
-  display: flex;
-}
+        /* Section Titles */
+        h2 {
+            color: white;
+            border-bottom: 3px solid #ffffff;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
 
-/* Style the navigation menu */
-nav {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  background: #ccc;
-  padding: 20px;
-}
+        /* Team Section */
+        .team-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 40px auto;
+            max-width: 1200px;
+        }
 
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
+        .team-member {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            height: 320px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            color: black;
+        }
 
-/* Style the content */
-article {
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-  background-color: #f1f1f1;
-  padding: 10px;
-}
+        .team-member:hover {
+            transform: scale(1.05);
+        }
 
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
+        /* Headshots - Ensuring perfect circles */
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
 
-/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  section {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-}
-</style>
+        /* Link Styling */
+        a {
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* List Styling */
+        .list-section {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: left;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        ol, ul {
+            text-align: left;
+            margin-left: 30px;
+            font-size: 18px;
+        }
+
+        ol li, ul li {
+            margin: 8px 0;
+        }
+
+        /* Downloadable File */
+        .download {
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+    </style>
 </head>
 <body>
 
-<h2>CSS Layout Flexbox</h2>
-<p>In this example, we have created a header, two columns/boxes and a footer. On smaller screens, the columns will stack on top of each other.</p>
-<p>Resize the browser window to see the responsive effect.</p>
-
 <header>
-  <h2>Management Team Page</h2>
+    Professional Leadership Team
 </header>
 
-<section>
-  <nav>
+<h2>Meet Our Team</h2>
+
+<div class="team-container">
+    <div class="team-member">
+        <img src="lan.jpg" alt="Lan">
+        <h3><b>Lan</b></h3>
+        <p><i>Chief Executive Officer</i></p>
+    </div>
+    
+    <div class="team-member">
+        <img src="aubrey.jpg" alt="Aubrey">
+        <h3><b>Aubrey</b></h3>
+        <p><i>Chief Operating Officer</i></p>
+    </div>
+    
+    <div class="team-member">
+        <img src="ignacio.jpg" alt="Ignacio">
+        <h3><b>Ignacio</b></h3>
+        <p><i>Chief Financial Officer</i></p>
+    </div>
+    
+    <div class="team-member">
+        <img src="matthew.jpg" alt="Matthew">
+        <h3><b>Matthew</b></h3>
+        <p><i>Head of Marketing</i></p>
+    </div>
+    
+    <div class="team-member">
+        <img src="sebastian.jpg" alt="Sebastian">
+        <h3><b>Sebastian</b></h3>
+        <p><i>Director of Strategy</i></p>
+    </div>
+</div>
+
+<!-- Ordered List: Leadership Hierarchy -->
+<h2>Our Leadership Structure</h2>
+<div class="list-section">
+    <ol>
+        <li><b>Lan - Chief Executive Officer (CEO)</b>: Leads the company’s vision and ensures long-term growth.</li>
+        <li><b>Aubrey - Chief Operating Officer (COO)</b>: Manages daily business operations and team coordination.</li>
+        <li><b>Ignacio - Chief Financial Officer (CFO)</b>: Oversees financial strategy, investments, and budgeting.</li>
+        <li><b>Matthew - Head of Marketing</b>: Develops marketing campaigns and brand positioning.</li>
+        <li><b>Sebastian - Director of Strategy</b>: Analyzes trends and defines strategic business directions.</li>
+    </ol>
+</div>
+
+<!-- Unordered List: Why Choose Us -->
+<h2>Why Choose Us?</h2>
+<div class="list-section">
     <ul>
-      <li><a href="#">London</a></li>
-      <li><a href="#">Paris</a></li>
-      <li><a href="#">Tokyo</a></li>
+        <li><b>Innovative Thinking</b>: We embrace cutting-edge ideas and solutions.</li>
+        <li><b>Customer-First Approach</b>: Our focus is always on delivering the best experience.</li>
+        <li><b>Quality Products</b>: Every item is designed with premium craftsmanship.</li>
+        <li><b>Strong Team Collaboration</b>: Our leadership team works seamlessly together.</li>
     </ul>
-  </nav>
-  
-  <article>
-    <h1>About us</h1>
-    <p>Our team is comprise of five individuals that share the same goal of revolutionizing the athletic line. We pride ourselves in our unique design that establishes a new playing field for the athetlic industry.</p>
+</div>
 
-<h1>Team Members</h1>
+<!-- Internal Link to Product Page -->
+<h2>Check Out Our Products</h2>
+<p><a href="product.html">Explore our latest designs here.</a></p>
 
-<ul>
-  <li>Lan: Chief Executive Officer</li>
-  <li>Aubrey: Chief Operating Officer</li>
-  <li>Ignacio: Chief Financial Officer</li>
-  <li>Matthew: Head of Marketing</li>
-  <li>Sebastian: Director of Strategy</li>
-</ul>
+<!-- Contact Me Section -->
+<h2>Contact Us</h2>
+<p><a href="mailto:aubreykennelly4@gmail.com">Click here</a> to email Aubrey directly.</p>
 
-</body>
-</html>
-  </article>
-</section>
-
-<footer>
-  <p>Footer</p>
-</footer>
+<!-- Downloadable File -->
+<div class="download">
+    <h2>Download Our Product Development Story</h2>
+    <p>Learn how we created our first product with detailed images and history.</p>
+    <p><a href="productdevelopment.pdf" download>Click here to download</a></p>
+</div>
 
 </body>
 </html>
-
