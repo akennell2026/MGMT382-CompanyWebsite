@@ -74,13 +74,6 @@
             border-radius: 50%;
         }
 
-        /* Specific Fix: Ensuring Aubrey, Lan, and Matthew are perfect circles */
-        .team-member img[src="lan.jpg"],
-        .team-member img[src="aubrey.jpg"],
-        .team-member img[src="matthew.jpg"] {
-            aspect-ratio: 1 / 1;
-        }
-
         /* Link Styling */
         a {
             color: #1e3a8a;
@@ -114,7 +107,6 @@
         .download {
             margin-top: 20px;
         }
-
     </style>
 </head>
 <body>
@@ -127,31 +119,31 @@
 
 <div class="team-container">
     <div class="team-member">
-        <img src="lan.jpg" alt="Lan">
+        <img src="images/lan.jpg" alt="Lan" onerror="this.onerror=null; this.src='https://via.placeholder.com/150';">
         <h3><b>Lan</b></h3>
         <p><i>Chief Executive Officer</i></p>
     </div>
     
     <div class="team-member">
-        <img src="aubrey.jpg" alt="Aubrey">
+        <img src="images/aubrey.jpg" alt="Aubrey" onerror="this.onerror=null; this.src='https://via.placeholder.com/150';">
         <h3><b>Aubrey</b></h3>
         <p><i>Chief Operating Officer</i></p>
     </div>
     
     <div class="team-member">
-        <img src="ignacio.jpg" alt="Ignacio">
+        <img src="images/ignacio.jpg" alt="Ignacio" onerror="this.onerror=null; this.src='https://via.placeholder.com/150';">
         <h3><b>Ignacio</b></h3>
         <p><i>Chief Financial Officer</i></p>
     </div>
     
     <div class="team-member">
-        <img src="matthew.jpg" alt="Matthew">
+        <img src="images/matthew.jpg" alt="Matthew" onerror="this.onerror=null; this.src='https://via.placeholder.com/150';">
         <h3><b>Matthew</b></h3>
         <p><i>Head of Marketing</i></p>
     </div>
     
     <div class="team-member">
-        <img src="sebastian.jpg" alt="Sebastian">
+        <img src="images/sebastian.jpg" alt="Sebastian" onerror="this.onerror=null; this.src='https://via.placeholder.com/150';">
         <h3><b>Sebastian</b></h3>
         <p><i>Director of Strategy</i></p>
     </div>
@@ -186,7 +178,12 @@
 
 <!-- Contact Me Section -->
 <h2>Contact Us</h2>
-<p><a href="mailto:aubreykennelly4@gmail.com">Click here</a> to email Aubrey directly.</p>
+<p>Email: <span id="email"></span></p>
+
+<script>
+    // Obfuscate Email Address for Spam Protection
+    document.getElementById("email").innerHTML = "<a href='mailto:" + "aubreykennelly4" + "@gmail.com'>Click here</a>";
+</script>
 
 <!-- Downloadable File -->
 <div class="download">
@@ -197,3 +194,4 @@
 
 </body>
 </html>
+
