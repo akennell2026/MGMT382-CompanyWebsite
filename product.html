@@ -12,13 +12,24 @@
             padding: 0;
         }
         header {
-            background: #35424a;
-            color: #ffffff;
-            padding: 10px 0;
             text-align: center;
+            padding: 10px 0;
         }
-        h1 {
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .logo img {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+        .logo h1 {
+            font-size: 2em;
             margin: 0;
+            color: #000;
         }
         .container {
             width: 80%;
@@ -114,7 +125,10 @@
 </head>
 <body>
     <header>
-        <h1>Stride Glide</h1>
+        <div class="logo">
+            <img src="logo.png" alt="Stride Glide Logo">
+            <h1>Stride Glide</h1>
+        </div>
     </header>
     <div class="container">
         <h2 class="page-title">Explore Our Premium Products</h2>
@@ -122,8 +136,8 @@
         <div class="product-container">
             <div class="carousel">
                 <img src="runningshoeimage1.png" alt="Running Shoe">
-                <img src="runningshoeimage2.png" alt="Product 2">
-                <img src="runningshoeimage3.png" alt="Product 3">
+                <img src="runningshoeimage2.png" alt="Running Shoe 2">
+                <img src="runningshoeimage3.png" alt="Running Shoe 3">
             </div>
             <div class="product-details">
                 <h3 class="highlight">Stride Glide Boost Running Shoe</h3>
@@ -203,7 +217,7 @@
         <!-- Downloadable File Link -->
         <div class="downloadable-file">
             <h3>Download Our Product Brochure:</h3>
-            <a href="Stride_Glide_Product_Brochure_Refined.pdf" download>Download Brochure</a>
+            <a href="Stride_Glide_Product_Be_Refined.pdf" download>Download Brochure</a>
         </div>
     </div>
 
