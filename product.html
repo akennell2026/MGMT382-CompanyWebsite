@@ -4,47 +4,220 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stride Glide - Our Signature Sneaker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .product-container {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            width: 50%;
+        }
+        .carousel img {
+            width: 100%;
+            height: auto;
+            scroll-snap-align: center;
+            margin-bottom: 10px;
+        }
+        .carousel::-webkit-scrollbar {
+            display: none;
+        }
+        .product-details {
+            width: 50%;
+            padding-left: 20px;
+        }
+        .product-details-right {
+            width: 50%;
+            padding-right: 20px;
+        }
+        .buy-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #35424a;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .size-selection {
+            margin-top: 20px;
+        }
+        .size-selection label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .size-selection select {
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 1.5em;
+            color: #35424a;
+            margin-top: 20px;
+        }
+        .features {
+            margin-top: 20px;
+        }
+        .features ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .features ul li {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            font-weight: bold;
+            text-decoration: underline;
+            font-style: italic;
+        }
+        .contact-link {
+            font-size: 1.2em;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .contact-link:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+        .page-title {
+            font-family: 'Georgia', serif;
+            font-size: 2em;
+            color: #35424a;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-
-    <h1 style="color:blue;">Stride <span style="color:red;">Glide</span> Signature Sneaker</h1>
-    
-    <p style="font-family:'Arial';"><b>Experience the perfect blend of style, comfort, and performance with our signature sneaker.</b></p>
-
-    <h2>Stride Glide X1</h2>
-    <p><b><i><u>The Ultimate Sneaker for Every Step.</u></i></b></p>
-    
-    <div>
-        <img src="https://i.imgur.com/J7cpasS.jpg" alt="Stride Glide X1" width="300">
-        <p><b><i><u>Stride Glide X1</b>: Designed for athletes and trendsetters alike, the X1 offers unmatched comfort, durability, and style.</u></i></b></p>
+    <header>
+        <h1>Stride Glide</h1>
+    </header>
+    <div class="container">
+        <h2 class="page-title">Explore Our Premium Products</h2>
+        <!-- Running Shoe Product -->
+        <div class="product-container">
+            <div class="carousel">
+                <img src="runningshoeimage1.png" alt="Running Shoe">
+                <img src="runningshoeimage2.png" alt="Product 2">
+                <img src="runningshoeimage3.png" alt="Product 3">
+            </div>
+            <div class="product-details">
+                <h3 class="highlight">Stride Glide Boost Running Shoe</h3>
+                <p>The <span class="highlight">Stride Glide Boost</span> is the ultimate combination of comfort, durability, and high performance. Designed with innovative cushioning technology, this shoe provides unparalleled support for runners of all levels. Its breathable, moisture-wicking fabric keeps feet cool and dry, while the ergonomic sole ensures a natural stride with maximum energy return.</p>
+                <p>Crafted for both professional athletes and fitness enthusiasts, the Boost model is Stride Glide’s #1 best-selling running shoe—trusted by thousands for its superior comfort and foot health benefits. The sleek and stylish design, available in a range of fashionable colors, makes it perfect for both performance and casual wear. Whether you’re training for a marathon or taking a casual jog, the Boost will help you go the extra mile.</p>
+                <p class="price">💰 Price: $99.99</p>
+                <div class="size-selection">
+                    <label for="size">Select Size:</label>
+                    <select id="size" name="size">
+                        <option value="6">6 (Male) / 7.5 (Female) / 39 (EU)</option>
+                        <option value="7">7 (Male) / 8.5 (Female) / 40 (EU)</option>
+                        <option value="8">8 (Male) / 9.5 (Female) / 41 (EU)</option>
+                        <option value="9">9 (Male) / 10.5 (Female) / 42 (EU)</option>
+                        <option value="10">10 (Male) / 11.5 (Female) / 43 (EU)</option>
+                        <option value="11">11 (Male) / 12.5 (Female) / 44 (EU)</option>
+                        <option value="12">12 (Male) / 13.5 (Female) / 45 (EU)</option>
+                    </select>
+                </div>
+                <div class="features">
+                    <h4>👟 Features:</h4>
+                    <ul>
+                        <li>✔️ Ultra-cushioned midsole for shock absorption</li>
+                        <li>✔️ Breathable, moisture-wicking fabric for dry comfort</li>
+                        <li>✔️ Ergonomic sole for optimal foot support</li>
+                        <li>✔️ Lightweight and durable construction</li>
+                    </ul>
+                </div>
+                <a href="#" class="buy-button">Buy Now</a>
+                <p>Stride Glide—Innovation, Sustainability, Comfort, Durability. Elevate your run today! 🚀</p>
+            </div>
+        </div>
+        <!-- Running Shirt Product -->
+        <div class="product-container">
+            <div class="product-details-right">
+                <h3 class="highlight">Stride Glide Performance Long Sleeve Shirt</h3>
+                <p>Designed for peak performance and all-day comfort, the Stride Glide Performance Long Sleeve Shirt is engineered to keep athletes moving effortlessly in any condition. Made from high-performance, moisture-wicking fabric, this shirt ensures you stay dry and comfortable, whether you’re on a long run, training at the gym, or enjoying an active lifestyle.</p>
+                <p>With a breathable and lightweight design, this long sleeve offers optimal temperature regulation, making it perfect for layering or wearing on its own. Its ergonomic fit enhances mobility without restriction, while the soft, stretchable material delivers superior comfort and durability. Available in a range of stylish colors, this is the go-to shirt for athletes who demand both function and fashion.</p>
+                <p class="price">💰 Price: $49.99</p>
+                <div class="size-selection">
+                    <label for="size-shirt">Select Size:</label>
+                    <select id="size-shirt" name="size-shirt">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                </div>
+                <div class="features">
+                    <h4>👕 Features:</h4>
+                    <ul>
+                        <li>✔️ Moisture-wicking, breathable fabric for sweat control</li>
+                        <li>✔️ Lightweight and stretchable for unrestricted movement</li>
+                        <li>✔️ Temperature-regulating design for all-weather wear</li>
+                        <li>✔️ Durable, soft-touch material for long-lasting comfort</li>
+                    </ul>
+                </div>
+                <a href="#" class="buy-button">Buy Now</a>
+                <p>Stride Glide—Innovation, Sustainability, Comfort, Durability. Take your performance to the next level! 🚀</p>
+            </div>
+            <div class="carousel">
+                <img src="runningshirt1.png" alt="Running Shirt">
+                <img src="runningshirt2.png" alt="Running Shirt 2">
+            </div>
+        </div>
+        <!-- Ordered List Example -->
+        <div class="ordered-list">
+            <h3>How to Use the Stride Glide Performance Long Sleeve Shirt:</h3>
+            <ol>
+                <li>Put on the shirt.</li>
+                <li>Adjust the fit for comfort.</li>
+                <li>Start your workout or activity.</li>
+                <li>Enjoy the moisture-wicking and temperature-regulating features.</li>
+                <li>Wash and care for the shirt as per the instructions.</li>
+            </ol>
+        </div>
+        <!-- Downloadable File Link -->
+        <div class="downloadable-file">
+            <h3>Download Our Product Brochure:</h3>
+            <a href="Stride_Glide_Product_Brochure_Refined.pdf" download>Download Brochure</a>
+        </div>
     </div>
 
-    <h2>Features</h2>
-    <ol>
-        <li> Lightweight and breathable material</li>
-        <li> Shock-absorbing sole for ultimate comfort</li>
-        <li> Stylish design with premium finish</li>
-        <li> Available in multiple colors</li>
-    </ol>
-
-    <h2>Download Our Product Catalog</h2>
-    <p>
-       <p><a href="https://drive.google.com/file/d/1g7MuqpIlY_Uy6BlxPZHDLchLhafCYyoV/view?usp=sharing" download>Click here to download</a></p>
-
-
     <h2>Navigation</h2>
-<ul>
-    <li><a href="./history.html">Company History</a></li>
-    <li><a href="./new management page.html">Management Team</a></li>
-    <li><a href="./product.html">Our Products</a></li>
-    <li><a href="./services.html">Our Services</a></li>
-    <li><a href="./testimonials.html">Customer Testimonials</a></li>
-</ul>
-
+    <ul>
+        <li><a href="./history.html">Company History</a></li>
+        <li><a href="./new management page.html">Management Team</a></li>
+        <li><a href="./product.html">Our Products</a></li>
+        <li><a href="./services.html">Our Services</a></li>
+        <li><a href="./testimonials.html">Customer Testimonials</a></li>
+    </ul>
 
     <p>
-        <a href="mailto:aguilers@purdue.edu">Contact Us</a>
+        <a href="mailto:jimen226@purdue.edu">Contact Us</a>
     </p>
-
 </body>
 </html>
